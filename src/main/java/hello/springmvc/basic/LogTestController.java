@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-// @Slf4j
+// @Slf4j // Lombokß
 @RestController // REST-API에 사용, HTTP BODY에 String을 넣어 화면에 그대로 반환함 (간단한 테스트라 여기에 사용)
 public class LogTestController {
 

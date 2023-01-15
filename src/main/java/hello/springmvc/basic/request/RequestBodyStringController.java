@@ -27,13 +27,13 @@ public class RequestBodyStringController {
         String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
 
         log.info("messageBody={}", messageBody);
-
         response.getWriter().write("ok");
     }
 
     @PostMapping("/request-body-string-v2")
     public void requestBodyStringV2(InputStream inputStream, Writer responseWriter) throws IOException {
         String messageBody = StreamUtils.copyToString(inputStream, StandardCharsets.UTF_8);
+
         log.info("messageBody={}", messageBody);
         responseWriter.write("ok");
     }
